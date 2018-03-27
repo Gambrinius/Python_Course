@@ -1,5 +1,4 @@
 num = int(input())
-
 head = '   _~_    '
 eyes = '  (o o)   '
 beak = ' /  V  \  '
