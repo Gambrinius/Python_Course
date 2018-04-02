@@ -3,4 +3,7 @@ y1 = int(input())
 x2 = int(input())
 y2 = int(input())
 
-print("YES") if abs(x1 - x2) % 2 == abs(y1 - y2) % 2 else print("NO")
+if ((x2-x1+y2-y1) % 2 == 0) and (y2-y1 >= abs(x2-x1)):
+    print('YES')
+else:
+    print('NO')
