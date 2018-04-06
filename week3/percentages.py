@@ -1,10 +1,10 @@
-months = int(input())
-roubles = int(input())
-kopec = int(input())
+percents = int(input())
+rub = int(input())
+kop = int(input())
 
-whole_sum = roubles + kopec / 100
-sum_ = whole_sum * (1 + months / 100)
+total = rub * 100 + kop
+result_sum = total + (total * percents / 100)
+result_rub = int(result_sum // 100)
+result_kop = int(result_sum % 100)
 
-whole_part = int(sum_)
-fract_part = int((sum_ - whole_part) * 100)
-print('{0} {1}'.format(whole_part, fract_part))
+print(result_rub, result_kop)
