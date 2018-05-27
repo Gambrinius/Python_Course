@@ -1,0 +1,6 @@
+input_params = list(map(int, input().split()))
+bus1_params = sorted(input_params[:2])
+bus2_params = sorted(input_params[2:])
+set_bus1 = set(range(bus1_params[0], bus1_params[1] + 1))
+set_bus2 = set(range(bus2_params[0], bus2_params[1] + 1))
+print(len(set_bus1.intersection(set_bus2)))
